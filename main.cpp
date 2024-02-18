@@ -2,10 +2,22 @@
 using namespace std;
 
 int main() {
-    int dig = 8;
-    dig <<= 3;
+    int line = 0;
+    int row = 0;
+    cout << "Enter the line number: ";
+    cin >> line;
+    cout << "Enter the row number: ";
+    cin >> row;
+    char symbol = '*';
+    cout << "Enter the symbol: ";
+    cin >> symbol;
 
-    cout << dig;
+    for (int i = 0; i < line; i++) {
+        for (int j = 0; j < row; j++) {
+            cout << symbol;
+        }
+        cout << endl;
+    }
 
     return 0;
 }

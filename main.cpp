@@ -1,23 +1,20 @@
 #include <iostream>
+
 using namespace std;
 
 int main() {
-    int line = 0;
-    int row = 0;
-    cout << "Enter the line number: ";
-    cin >> line;
-    cout << "Enter the row number: ";
-    cin >> row;
-    char symbol = '*';
-    cout << "Enter the symbol: ";
-    cin >> symbol;
-
-    for (int i = 0; i < line; i++) {
-        for (int j = 0; j < row; j++) {
-            cout << symbol;
-        }
-        cout << endl;
+    int pairNb = 0;
+    cin >> pairNb;
+    for (int i = 0; i < pairNb; i++) {
+        int xmin_1, x_max1, y_min1, y_max1;
+        int xmin_2, x_max2, y_min2, y_max2;
+        cin >> xmin_1;
+        cin >> x_max1;
+        cin >> y_min1;
+        cin >> y_max2;
+        cin >> xmin_2;
+        cin >> x_max2;
+        cin >> y_min2;
+        cin >> y_max2;
     }
-
-    return 0;
 }
